@@ -1,0 +1,159 @@
+*{
+    margin:0px;
+    padding:0px;
+box-sizing: border-box;
+}
+header{
+    width:100%; 
+    height:100vh;
+    background-image:url(10..jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+nav{
+    width: 100%;
+    height:15vh;
+    background:rgba(0, 0,0,0.2);
+    color:rgb(246, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width:25%;
+    text-align: center;
+
+}
+nav .menu{
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.navres{
+    display: none;
+}
+nav .menu a{
+    width:25%;
+    text-decoration: none;
+    color:white;
+
+}
+nav .menu a:first-child{
+color:#00b894
+}
+main{
+    width:100%;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:rgb(43, 4, 58);
+
+}
+section{
+
+}
+section h3{
+    font-size:35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px,2px black;
+    
+}
+section h1{
+    margin:30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700px;
+    text-shadow: 2px 1px 5px black;
+    text-transform:uppercase;
+}
+section p{
+    font-size:25;
+    word-spacing: 2px;
+    margin-bottom:25px;
+    text-shadow: 1px 1px 1px black;
+
+}
+section a{
+    padding:12px 30px;
+    border-radius:4px;
+    outline:none;
+    text-transform: uppercase;
+    font-size:13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition:all .5s ease;
+
+}
+section .btnone{
+    background:white;
+    color:#000;
+
+}
+section .btntwo{
+    background:#a6b800;
+    color:white
+    
+}
+.change_content:after{
+    content:' ';
+    animation: changetext 10s infinite linear;
+color:#99b800
+
+}
+
+@keyframes changetext{
+    0%{content:"Darjeeling";}
+    20%{content:"Agra";}
+    35%{content:"Jaipur";}
+    60%{content:"Kashmir";}
+    80%{content:"Kerala";}
+    100%{content:"Delhi";}
+}
+.btnone:hover{
+    background:#00b894;
+    color:white
+}
+.btntwo:hover{
+    background:white;
+    color:#000;  
+}
+
+ @media screen and (max-width:600){
+
+ }
+ @media  only screen and (max-width: 640px) {
+    nav .menu{
+        height: 230px;
+        flex-direction: column;
+        /* text-align: left;*/
+        flex: 0%;
+    }
+    .navres{
+        display: block;
+    }
+    /* #data{
+        display: none;
+    } */
+   nav .menu{
+        display: none;
+        /* color: red; */
+    }
+
+ }
+ .navres{
+    height: 40px;
+    width:50px;
+    background-color: grey;
+ }
+ .navlines{
+    border: 7px solid rgb(0, 0, 0);
+    /* border-radius: 1px; */
+ }
+ .navres:hover nav.menu{
+  display: block;
+}
